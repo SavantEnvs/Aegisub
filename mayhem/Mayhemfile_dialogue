@@ -1,0 +1,9 @@
+project: savantenvs/Aegisub
+target: dialogue
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/dialogue/testsuite
+cmds:
+  - cmd: /mayhem/mayhem/out/fuzz_dialogue
+    libfuzzer: true
+    timeout: 5

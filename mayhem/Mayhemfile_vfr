@@ -1,0 +1,9 @@
+project: savantenvs/Aegisub
+target: vfr
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/vfr/testsuite
+cmds:
+  - cmd: /mayhem/mayhem/out/fuzz_vfr
+    libfuzzer: true
+    timeout: 5

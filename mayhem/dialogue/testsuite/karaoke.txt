@@ -1,0 +1,1 @@
+{\k20}ka{\kf30}ra{\ko10}o!ke {\t(0,100,\fscx120)} !$var! {comment}

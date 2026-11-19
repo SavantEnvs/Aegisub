@@ -1,0 +1,9 @@
+1
+00:00:01,000 --> 00:00:04,000 X1:10 X2:20 Y1:5 Y2:9
+<i>Hello</i> <b>bold</b> <font color="#ff0000" size="12" face="Arial">red</font>
+
+2
+00:00:05,500 --> 00:00:07,250
+<u>second</u> {\an8}line
+with two lines &amp; entity
+

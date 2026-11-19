@@ -1,0 +1,9 @@
+project: savantenvs/Aegisub
+target: yuv4mpeg
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/yuv4mpeg/testsuite
+cmds:
+  - cmd: /mayhem/mayhem/out/fuzz_yuv4mpeg
+    libfuzzer: true
+    timeout: 5

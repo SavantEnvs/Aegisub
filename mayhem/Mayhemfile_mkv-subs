@@ -1,0 +1,9 @@
+project: savantenvs/Aegisub
+target: mkv-subs
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/mkv-subs/testsuite
+cmds:
+  - cmd: /mayhem/mayhem/out/fuzz_mkv_subs
+    libfuzzer: true
+    timeout: 5

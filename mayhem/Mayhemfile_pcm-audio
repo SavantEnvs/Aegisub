@@ -1,0 +1,9 @@
+project: savantenvs/Aegisub
+target: pcm-audio
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/pcm-audio/testsuite
+cmds:
+  - cmd: /mayhem/mayhem/out/fuzz_pcm_audio
+    libfuzzer: true
+    timeout: 5

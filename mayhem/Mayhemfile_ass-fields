@@ -1,0 +1,9 @@
+project: savantenvs/Aegisub
+target: ass-fields
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/ass-fields/testsuite
+cmds:
+  - cmd: /mayhem/mayhem/out/fuzz_ass_fields
+    libfuzzer: true
+    timeout: 5
